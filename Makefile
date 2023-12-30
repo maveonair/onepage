@@ -1,4 +1,4 @@
-.PHONY:  setup build build-css clean dev test
+.PHONY:  setup build build-css clean dev test release
 
 default: build
 
@@ -20,3 +20,6 @@ dev:
 
 test:
 	go test -v ./...
+
+release:
+	goreleaser --clean
