@@ -20,10 +20,10 @@ func main() {
 	listeningAddr := "0.0.0.0:8080"
 	log.Infof("Listening on %s", listeningAddr)
 
-	server, err := server.NewServer(pageFilePath)
+	srv, err := server.NewServer(pageFilePath)
 	if err != nil {
 		log.Fatalf("Could not create server %s", err)
 	}
 
-	log.Fatal(http.ListenAndServe(listeningAddr, server))
+	log.Fatal(http.ListenAndServe(listeningAddr, srv))
 }
