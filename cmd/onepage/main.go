@@ -17,7 +17,7 @@ func main() {
 		defer file.Close()
 	}
 
-	listeningAddr := "127.0.0.1:8080"
+	listeningAddr := "0.0.0.0:8080"
 	log.Infof("Listening on %s", listeningAddr)
 
 	server, err := server.NewServer(pageFilePath)
