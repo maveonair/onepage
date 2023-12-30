@@ -26,6 +26,8 @@ page.md
 
 # Output
 dist/
+internal/server/resources/styles.css
 
 # Node.js
 node_modules/
+
