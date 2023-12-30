@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    h1 {
+        @apply text-2xl font-bold mb-3;
+    }
+
+    h2 {
+        @apply text-xl font-bold mb-3;
+    }
+
+    h3 {
+        @apply text-lg font-bold mb-3;
+    }
+
+    a {
+        @apply text-blue-700 dark:text-blue-400;
+    }
+
+    a:hover {
+        @apply underline underline-offset-2;
+    }
+
+    pre, code {
+        @apply text-sm;
+    }
+
+    pre {
+        @apply mt-3 mb-3 p-2 bg-gray-100 dark:bg-gray-900 rounded-md;
+    }
+
+    ul {
+        @apply list-disc list-inside;
+    }
+
+    ul.decimal {
+        @apply list-decimal list-inside;
+    }
+
+    textarea {
+        @apply block w-full px-2 py-1 text-base font-normal bg-gray-100 bg-clip-padding border border-none rounded-md transition ease-in-out m-0 focus:border-blue-700 focus:outline-none dark:bg-gray-900;
+    }
+
+    .btn-primary {
+        @apply !no-underline inline-block px-6 py-1.5 bg-blue-700 text-white font-medium text-sm leading-tight  rounded-md hover:bg-blue-500 focus:bg-blue-500 focus:outline-none focus:ring-0 active:bg-blue-500 cursor-pointer;
+    }
+
+    .btn-default {
+        @apply !no-underline inline-block px-6 py-1.5 bg-gray-50 text-black font-medium text-sm leading-tight border-none rounded-md hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-100 cursor-pointer dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:bg-gray-700 dark:active:bg-gray-700;
+    }
+}

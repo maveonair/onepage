@@ -1,0 +1,10 @@
+{{define "content"}}
+<form action="/update" method="post">
+    <div>
+        <textarea cols="80" name="content" rows="20">{{ . }}</textarea>
+    </div>
+    <div class="text-right">
+        <button class="btn-primary mt-3" type="submit">Save</button>
+    </div>
+</form>
+{{end}}
