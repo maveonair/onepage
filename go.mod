@@ -3,7 +3,7 @@ module github.com/maveonair/onepage
 go 1.21.5
 
 require (
-	github.com/gomarkdown/markdown v0.0.0-20231222211730-1d6d20845b47
+	github.com/gomarkdown/markdown v0.0.0-20240930133441-72d49d9543d8
 	github.com/gorilla/mux v1.8.1
 	github.com/sirupsen/logrus v1.9.3
 )
